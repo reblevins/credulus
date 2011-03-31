@@ -10,7 +10,7 @@ set :scm_verbose, true
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
 # via the :deploy_to variable:
-set :deploy_to, "/home/blevins/credulus"
+set :deploy_to, "/home/blevins/#{application}"
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
@@ -18,9 +18,10 @@ set :deploy_to, "/home/blevins/credulus"
 
 role :app, "credul.us"
 role :web, "credul.us"
-role :db,  "mysql.ywamnation.com", :primary => true
+role :db,  "credul.us", :primary => true
 
 set :use_sudo, false
+set :chmod755, "app config db lib public vendor script script/* public/disp*"
 
 namespace :deploy do
   desc "Restart Application"
