@@ -17,6 +17,7 @@ gem 'acts_as_markup'
 gem 'disqus'
 gem "meta_where"
 gem "meta_search"
+gem 'rails_admin'
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -96,6 +96,7 @@ GEM
       activesupport (= 3.0.3)
       bundler (~> 1.0)
       railties (= 3.0.3)
+    rails_admin (0.0.0)
     railties (3.0.3)
       actionpack (= 3.0.3)
       activesupport (= 3.0.3)
@@ -130,4 +131,5 @@ DEPENDENCIES
   mocha
   nifty-generators
   rails (= 3.0.3)
+  rails_admin
   sqlite3-ruby
