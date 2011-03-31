@@ -1,0 +1,5 @@
+<% if can? :create, @post %>
+<p><%= link_to "New Post", new_post_path %></p>
+<% end %>
+
+<div id="posts"><%= render "posts" %></div>
